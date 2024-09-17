@@ -17,3 +17,5 @@ const shipFactory = (() => {
 
     return {createShip};
 })();
+
+module.exports = shipFactory;
