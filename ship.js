@@ -1,5 +1,5 @@
 const shipFactory = (() => {
-    const createShip = function (length) {
+    const createShip = function (length, position, direction) {
         const len = length;
         let numHits = 0;
 
@@ -11,7 +11,11 @@ const shipFactory = (() => {
             return numHits === len;
         }
 
-        return {len, numHits, hit, isSunk};
+        const getNumHits = function() {
+            return numHits;
+        }
+
+        return {len, position, direction, getNumHits, hit, isSunk};
     }
 
 
