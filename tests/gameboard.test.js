@@ -1,4 +1,4 @@
-const gameBoardFactory = require("./gameboard.js");
+const gameBoardFactory = require("../gameboard.js");
 
 test('add ship to board', () => {
     const testGameBoard = gameBoardFactory.createGameBoard();
