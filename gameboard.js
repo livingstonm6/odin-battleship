@@ -71,7 +71,19 @@ const gameBoardFactory = (() => {
             return ships.length;
         }
 
-        return {placeShip, receiveAttack, allSunk, getShipCount};
+        const isShotValid = function (x, y) {
+            return shotGrid[x][y] === -1;
+        }
+
+        const getShotGrid = function () {
+            return shotGrid;
+        }
+
+        const getShipGrid = function () {
+            return shipGrid;
+        }
+
+        return {placeShip, receiveAttack, allSunk, getShipCount, isShotValid, getShotGrid, getShipGrid};
     }
 
     return {createGameBoard};
