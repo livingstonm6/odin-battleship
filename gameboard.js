@@ -1,4 +1,4 @@
-const shipFactory = require("./Ship");
+import shipFactory from './ship.js';
 
 const gameBoardFactory = (() => {
     const createGameBoard = () => {
@@ -89,4 +89,4 @@ const gameBoardFactory = (() => {
     return {createGameBoard};
 })();
 
-module.exports = gameBoardFactory;
+export default gameBoardFactory;

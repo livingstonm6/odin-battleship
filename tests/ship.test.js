@@ -1,5 +1,5 @@
-const shipFactory = require('../ship.js');
-
+//const shipFactory = require('../ship.js');
+import shipFactory from "../ship.js";
 test('create ship', () => {
     const x = 0;
     const y = 0;

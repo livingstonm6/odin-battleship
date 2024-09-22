@@ -1,4 +1,4 @@
-const playerManager = require("./player.js");
+import playerManager from './player.js';
 
 const gameManager = (() => {
     let players = [];
@@ -72,4 +72,4 @@ const gameManager = (() => {
 
 })();
 
-module.exports = gameManager;
+export default gameManager;

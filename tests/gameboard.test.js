@@ -1,5 +1,5 @@
-const gameBoardFactory = require("../gameboard.js");
-
+//const gameBoardFactory = require("../gameboard.js");
+import gameBoardFactory from "../gameboard.js";
 test('add ship to board', () => {
     const testGameBoard = gameBoardFactory.createGameBoard();
     testGameBoard.placeShip(0, 0, 3, 'down');

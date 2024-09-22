@@ -1,4 +1,4 @@
-const gameBoardFactory = require("./gameboard.js");
+import gameBoardFactory from './gameboard.js';
 
 const playerFactory =(() => {
     const createPlayer = function(computerControlled) {
@@ -6,11 +6,8 @@ const playerFactory =(() => {
         const gameBoard = gameBoardFactory.createGameBoard();
 
         return {cpuControlled, gameBoard};
-
     }
-
-
     return {createPlayer};
 })();
 
-module.exports = playerFactory;
+export default playerFactory;

@@ -1,5 +1,5 @@
-const gameManager = require('../game.js');
-
+//const gameManager = require('../game.js');
+import gameManager from '../game.js';
 test('detect player 0 win', () => {
     gameManager.start(false);
 

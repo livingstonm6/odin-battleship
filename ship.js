@@ -22,4 +22,4 @@ const shipFactory = (() => {
     return {createShip};
 })();
 
-module.exports = shipFactory;
+export default shipFactory;
